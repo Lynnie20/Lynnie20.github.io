@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin:0;
+            padding:0;
+        }
+        .container{
+            width:100%;
+        }
+        .header{
+            display: flex;
+            justify-content: center;
+            background-color: #e7e3e3;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 9999;
+            height:100px;
+        }
+        .header .container{
+            height:50px;
+            background-color: #02337e;
+            width:100%;
+        }
+        .main{
+            margin-top: 0px;
+            display: flex;
+        }
+        .main .container{
+            display: flex;
+            margin-top:30px;
+            
+        }
+        .left {
+            height: 400px;
+            width:400px;
+            background-color: antiquewhite;
+            margin-bottom: 0px;
+            margin-right: 30px;
+            gap: 10px;
+            flex:auto;
+            display:flex;
+            position: relative;
+        }
+
+        .right {
+            height: 405px;
+            background-color: #ffffff;
+            margin-bottom: 0px;
+            width: 100px;
+            display:flex;
+            flex:auto;
+            margin-right: 10px;
+            flex-direction: column;
+            position: relative;
+        }
+        .right .container{
+            height:245px;
+            background-color: rgb(202, 217, 247);
+            width: 300px;
+            display:flex;
+            flex:auto;
+            margin-right: 30px;
+            margin-top: 0px;
+            margin-bottom: 5px;
+        }
+        @media(max-width:960px){
+            .main .container{
+                display: block;
+            }
+            .container {
+                width:100%;
+                margin: 0 10px;
+            }
+            .left{
+                margin-right:0px;
+            }
+            
+            .right{
+                width:100%;
+            }
+        }
+        @media(max-width:700px){
+            .main .container{
+                display: block;
+            }
+            .container {
+                width:100%;
+                margin: 0 10px;
+            }
+            .left{
+                margin-right:0px;
+            }
+            .right{
+                width:100%;
+            }
+        }
+
+        
+
+        .header2{
+            background-color: #ffffff;
+            height:90px;
+            width:100%;
+            margin-top: 50px;
+            margin-bottom: 0px;
+            padding-top: 20px;
+        }
+        .header2 .container{
+            display: flex;
+            height:90px;
+            background-color: #ffffff;
+            width:100%;
+            justify-content: center;
+            padding-top: 20px;
+        }
+
+        .under{
+            background-color: #ffffff;
+            height:100px;
+            width:1000px;
+            padding-top: 0px;
+            margin-top: 0px;
+        }
+        .under .container{
+            display:flex;
+            justify-content: center;
+            height:90px;
+            width:600px;
+            padding-top: 20px;
+            margin-top:0px;
+            margin-right: 20px;
+        }
+
+        .under2{
+            background-color: #ffffff;
+            height:500px;
+            width:90%;
+        }
+        .under2 .container{
+            display:flex;
+            height:80px;
+            width:90%;
+            padding-top: 20px;
+            margin-top:10px;
+            margin-left: 30px;
+            margin-right: 30px;
+            background-color: #cecece;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .end{
+            background-color: #ffffff;
+            height:500px;
+            width:85%;
+            margin-left: 20px;
+            
+        }
+        .end .container1{
+            display:flex;
+            height:490px;
+            width:90%;
+            margin-left: 10px;
+            margin-right: 10px;
+            flex-direction: row;
+            background-color: #e0ccdc;
+            margin-top: 0px;
+        }
+        .footer{
+            background-color: #02337e;
+            height:200px;
+            width:100%;
+
+        }
+       
+
+       
+    </style>
+
+    
+
+</head>
+
+<body>
+    <div class="header">
+        <div class= "container"></div>
+    </div>
+
+    <div class="header2">
+        <div class= "container">
+            <h1><b>校园要闻</b></h1>
+        </div>
+
+    </div>
+    
+    
+    <div class = "main">
+        <div class = "container">
+            <div class = "left"></div>
+            <div class="right">
+                <div class = "container"></div>
+                <div class = "container"></div>
+            </div>
+            <div class="right">
+                <div class = "container"></div>
+                <div class = "container"></div>
+            </div>
+        </div>
+    </div> 
+   
+    <div class = "main">
+        <div class = "container">       
+            <div class="right">
+                <div class = "container"></div>
+                <div class = "container"></div>
+            </div>
+            <div class="right">
+                <div class = "container"></div>
+                <div class = "container"></div>
+            </div>
+            <div class = "left"></div>
+        </div>
+    </div> 
+
+    <div class = "main">
+        <div class = "container"> 
+            <div class = "under">
+                <div class = "container">
+                    <h1><b>
+                        新闻快讯
+                    </b></h1>
+                </div>
+            </div>
+            <div class = "under">
+                <div class = "container">
+                    <h1><b>
+                        媒体报道
+                    </b></h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class = "main">
+        <div class = "container">
+            <div class = "under2">
+                <div class = "container">
+                </div>
+                <div class = "container"></div>
+                <div class = "container"></div>
+                <div class = "container"></div>
+            </div> 
+            <div class = "under2">
+                <div class = "container"></div>
+                <div class = "container"></div>
+                <div class = "container"></div>
+                <div class = "container"></div>
+            </div> 
+        </div>
+    </div>
+
+    <div class = "main">
+        <div class = "container">
+            <div class = "end">
+                <div class = "container1">
+                </div>
+            </div>
+            <div class = "end">
+                <div class = "container1">
+                    
+                </div>
+            </div>
+            <div class = "end">
+                <div class = "container1">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class = "main">
+        <div class = "container">
+            <div class = "footer">
+
+            </div>
+        </div>
+    </div>
+
+
+
+    
+</body>
+</html>
