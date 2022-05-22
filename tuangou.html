@@ -1,0 +1,1028 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>123</title>
+		<link rel="stylesheet" href="https://unpkg.com/mvp.css">
+        
+    </head>
+	<style>
+	 body{
+        padding:0;
+        margin: 10px;
+		height:1000px;
+        background-color: #fcf8df;
+    }
+    
+        .header{
+            background-image:linear-gradient(to right,#d3b0b0,#fbfbc0);
+            width:100%;
+            margin-bottom: 0px;
+            height:100px;
+            margin-left: 0px;
+            border-radius: 10px;
+            margin-top: 0px;
+            text-align:center;
+        }
+        
+        .main{
+            margin-top: 10px;
+            display: flex;  
+        }
+        .main .container{
+            margin-top:30px;
+            display: flex;
+        }
+        .right {
+            height: 405px;
+            background-color: #fcf8df;
+            margin-top: 0px;
+            width: 280px;
+            display:flex;
+            flex:auto;
+            flex-direction: column;
+            position: relative;
+        }
+        .right .container{
+            height:300px;
+            background-color: rgb(218, 191, 191);
+            width: 250px;
+            margin-top: 0px;
+            border-radius: 10px;
+        
+        }
+        .container .imgBx{
+            position:absolute;
+            top:0;
+            margin-left:0px;
+            width:250px;
+            height:auto;
+            margin-bottom: 0px;
+        }
+        .container .imgBx .img{
+            position:absolute;
+            top:0;
+            left:0;
+            width:100%;
+            height:auto;
+            object-fit: hidden;
+            transition: 8s;
+        }
+        .container:hover .imgBx img{
+            opacity: 0;
+        }
+
+        .container .content{
+            position: absolute;
+            top:0;
+            margin-left:0px;
+            width:0px;
+            height:auto;
+            transition: 5s;
+            overflow:hidden;
+            
+
+        }
+        .container .content .img{
+            position:absolute;
+            top:0;
+            left:0;
+            width:100%;
+            height:auto;
+            transition: 3s;
+        }
+        .container:hover .content{
+            width:2500px;
+            height:auto;
+            box-sizing:border-box;
+        }
+
+
+       
+        
+        
+		.active {
+			background-color: rgba(161, 147, 164, 0.527);
+		}
+		#nav {
+			position: fixed;
+            right: 0;
+		}
+	</style>
+	<body>
+    <div class= "body">
+        <div class="header">
+            
+                    <font face = "幼圆"><h2>某某小区团购信息汇总</h2></font>
+                     注意！！！请确认团长为本小区居民后下单 非必需品尽量不要购买<br>
+                     &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<a herf = "https://clemencelee.github.io/%E6%97%B6%E9%97%B4%E8%BD%B4/%E6%97%B6%E9%97%B4%E8%BD%B4.html">返回首页</a></h3><br>
+                   <a href = "C:\Users\lyn\Desktop\a1\t团购表单.html">我要新增团购</a>
+            
+        </div>
+		<ul id="nav">
+			<li><a href="#1" class="active">#1.蔬菜&emsp;</a></li>
+			<li><a href="#2" class="active">#2.肉蛋奶&emsp;</a></li>
+			<li><a href="#3" class="active">#3.水果&emsp;</a></li>
+            <li><a href="#4" class="active">#4.饮料冰激凌&emsp;</a></li>
+            <li><a href="#5" class="active">#5.休闲食品&emsp;</a></li>
+            <li><a href="#6" class="active">#6.米面粮油&emsp;</a></li>
+            <li><a href="#7" class="active">#7.日用品&emsp;</a></li>
+            <li><a href="#8" class="active">#8.其他&emsp;</a></li>
+		</ul>
+        <h2 class="title" id="1">#1.蔬菜</h2>
+        <div class = "main"> 
+            <div class = "container">
+                <div class="right">
+                    <div class = "container">
+                        <div class = "imgBx">
+                            <img src = "C:\Users\lyn\Desktop\a1\img\新建文件夹\蔬菜团.jpg" width = 250px>
+                        </div>
+                        <div class = "content">
+                            <img src = "C:\Users\lyn\Desktop\a1\img\新建文件夹\html二维码.jpg" width = 250px>
+                        </div>
+                    </div>
+                    <div class = "container">
+                        <br><br><br><br><br><br>
+                        蔬菜团购：
+                    </div>
+                </div>
+            </div>
+            <div class = "container">
+                <div class="right">
+                    <div class = "container">
+                        <div class = "imgBx">
+                            <img src = "C:\Users\lyn\Desktop\a1\img\新建文件夹\浙江蔬菜.jpg" width = 250px>
+                        </div>
+                        <div class = "content">
+                            <img src = "C:\Users\lyn\Desktop\a1\img\新建文件夹\html二维码.jpg" width = 250px>
+                        </div>
+                    </div>
+                    <div class = "container">
+                        <br><br><br><br><br><br>
+                        30元5-6斤绿叶菜，青菜韭菜杭白菜三种随机
+                    </div>
+                </div>
+            </div>
+    
+            <div class = "container">
+                <div class="right">
+                    <div class = "container">
+                        <div class = "imgBx">
+                            <img src = "C:\Users\lyn\Desktop\a1\img\新建文件夹\笋.jpg" width = 250px>
+                        </div>
+                        <div class = "content">
+                            <img src = "C:\Users\lyn\Desktop\a1\img\新建文件夹\html二维码.jpg" width = 250px>
+                        </div>
+                    </div>
+                    <div class = "container">
+                        <br><br><br><br><br><br>
+                        临安春笋 现挖
+                    </div>
+                </div>
+            </div>
+    
+            <div class = "container">
+                <div class="right">
+                    <div class = "container">
+                        <div class = "imgBx">
+                            <img src = "C:\Users\lyn\Desktop\a1\img\新建文件夹\蚕豆.jpg" width = 250px>
+                        </div>
+                        <div class = "content">
+                            <img src = "C:\Users\lyn\Desktop\a1\img\新建文件夹\html二维码.jpg" width = 250px>
+                        </div>
+                    </div>
+                    <div class = "container">
+                        <br><br><br><br><br><br>
+                        新鲜蚕豆 一包10斤35元 当天采摘~
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class = "main">
+            <div class = "container">
+                <div class="right">
+                    <div class = "container">
+                        <div class = "imgBx">
+                            <img src = "C:\Users\lyn\Desktop\a1\img\新建文件夹\青菜.jpg" width = 250px>
+                        </div>
+                        <div class = "content">
+                            <img src = "C:\Users\lyn\Desktop\a1\img\新建文件夹\html二维码.jpg" width = 250px>
+                        </div>
+                    </div>
+                    <div class = "container">
+                        <br><br><br><br><br><br>
+                        宁夏青菜 1公斤20元
+                    </div>
+                </div>
+            </div>
+            <div class = "container">
+                <div class="right">
+                    <div class = "container">
+                        <div class = "imgBx">
+                            <img src = "C:\Users\lyn\Desktop\a1\img\新建文件夹\贝贝南瓜.jpg" width = 250px>
+                        </div>
+                        <div class = "content">
+                            <img src = "C:\Users\lyn\Desktop\a1\img\新建文件夹\html二维码.jpg" width = 250px>
+                        </div>
+                    </div>
+                    <div class = "container">
+                        <br><br><br><br><br><br>
+                        贝贝南瓜，周四左右到
+                    </div>
+                </div>
+            </div>
+            <div class = "container">
+                <div class="right">
+                    <div class = "container">
+                        <div class = "imgBx">
+                            <img src = "C:\Users\lyn\Desktop\a1\img\新建文件夹\蔬菜团购.jpg" width = 250px>
+                        </div>
+                        <div class = "content">
+                            <img src = "C:\Users\lyn\Desktop\a1\img\新建文件夹\html二维码.jpg" width = 250px>
+                        </div>
+                    </div>
+                    <div class = "container">
+                        <br><br><br><br><br><br>
+                        蚕豆6斤茭白2斤送葱姜蒜总价43 20份成团 48小时送达
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h2 class="title" id="2">#2.肉蛋奶</h2>
+        <div class = "main">
+            <div class = "container">
+                
+                <br><br><br><br>
+                <div class="right">
+                    <div class = "container">
+                        <div class = "imgBx">
+                            <img src = "C:\Users\lyn\Desktop\a1\img\新建文件夹\安格斯牛肉饼.jpg" width = 250px>
+                        </div>
+                        <div class = "content">
+                            <img src = "C:\Users\lyn\Desktop\a1\img\新建文件夹\html二维码.jpg" width = 250px>
+                        </div>
+                    </div>
+           
+                    <div class = "container">
+                        <br><br><br><br><br><br>
+                        泰森安格斯牛肉饼套餐
+                    </div>
+                </div>
+            </div>
+    
+            <div class = "container">
+                <div class="right">
+                    <div class = "container">
+                        <div class = "imgBx">								
+                            <img src = "C:\Users\lyn\Desktop\a1\img\新建文件夹\虫草鸡蛋.jpg" width = 250px>
+                        </div>
+                        <div class = "content">
+                            <img src = "C:\Users\lyn\Desktop\a1\img\新建文件夹\html二维码.jpg" width = 250px>
+                        </div>
+                    </div>
+                    <div class = "container">
+                        <br><br><br><br><br><br>
+                        虫草鸡蛋30元30个
+                    </div>
+                </div>
+            </div>
+        
+            
+            <div class = "container">
+                <div class="right">
+                    <div class = "container">
+                        <div class = "imgBx">
+                            <img src = "C:\Users\lyn\Desktop\a1\img\新建文件夹\猪肉.jpg" width = 250px>
+                        </div>
+                        <div class = "content">
+                            <img src = "C:\Users\lyn\Desktop\a1\img\新建文件夹\html二维码.jpg" width = 250px>
+                        </div>
+                    </div>
+                    <div class = "container">
+                        <br><br><br><br><br><br>
+                        膳博士猪肉
+                    </div>
+                </div>
+            </div>
+        
+            <div class = "container">
+                <div class="right">
+                    <div class = "container">
+                        <div class = "imgBx">
+                            <img src = "C:\Users\lyn\Desktop\a1\img\新建文件夹\午餐肉.jpg" width = 250px>
+                        </div>
+                        <div class = "content">
+                            <img src = "C:\Users\lyn\Desktop\a1\img\新建文件夹\html二维码.jpg" width = 250px>
+                        </div>
+                    </div>
+                    <div class = "container">
+                        <br><br><br><br><br><br>
+                        梅林午餐肉340g*4灌 58元
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class = "main">
+            <div class = "container">
+                <div class="right">
+                    <div class = "container">
+                        <div class = "imgBx">
+                            <img src = "C:\Users\lyn\Desktop\a1\img\新建文件夹\海鲜.jpg" width = 250px>
+                        </div>
+                        <div class = "content">
+                            <img src = "C:\Users\lyn\Desktop\a1\img\新建文件夹\html二维码.jpg" width = 250px>
+                        </div>
+                    </div>
+                    <div class = "container">
+                        <br><br><br><br><br><br>
+                        舟山直发 30斤成团 48小时送达
+                    </div>
+                </div>
+            </div>
+            <div class = "container">
+                <div class="right">
+                    <div class = "container">
+                        <div class = "imgBx">
+                            <img src = "C:\Users\lyn\Desktop\a1\img\新建文件夹\鸡肉.jpg" width = 250px>
+                        </div>
+                        <div class = "content">
+                            <img src = "C:\Users\lyn\Desktop\a1\img\新建文件夹\html二维码.jpg" width = 250px>
+                        </div>
+                    </div>
+                    <div class = "container">
+                        <br><br><br><br><br><br>
+                        泰森鸡翅中，琵琶腿，鸡大胸，鸡爪
+                    </div>
+                </div>
+            </div>
+            <div class = "container">
+                <div class="right">
+                    <div class = "container">
+                        <div class = "imgBx">
+                            <img src = "C:\Users\lyn\Desktop\a1\img\新建文件夹\特仑苏.jpg" width = 250px>
+                        </div>
+                        <div class = "content">
+                            <img src = "C:\Users\lyn\Desktop\a1\img\新建文件夹\html二维码.jpg" width = 250px>
+                        </div>
+                    </div>
+                    <div class = "container">
+                        <br><br><br><br><br><br>
+                        特仑苏牛奶12盒*250ml 44.9元
+                    </div>
+                </div>
+            </div>
+            <div class = "container">
+                <div class="right">
+                    <div class = "container">
+                        <div class = "imgBx">
+                            <img src = "C:\Users\lyn\Desktop\a1\img\新建文件夹\光明牛奶.jpg" width = 250px>
+                        </div>
+                        <div class = "content">
+                            <img src = "C:\Users\lyn\Desktop\a1\img\新建文件夹\html二维码.jpg" width = 250px>
+                        </div>
+                    </div>
+                    <div class = "container">
+                        <br><br><br><br><br><br>
+                        优倍 1.35L
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class = "main">
+            <div class = "container">
+                <div class="right">
+                    <div class = "container">
+                        <div class = "imgBx">
+                            <img src = "C:\Users\lyn\Desktop\a1\img\新建文件夹\牛奶.jpg" width = 250px>
+                        </div>
+                        <div class = "content">
+                            <img src = "C:\Users\lyn\Desktop\a1\img\新建文件夹\html二维码.jpg" width = 250px>
+                        </div>
+                    </div>
+                    <div class = "container">
+                        <br><br><br><br><br><br>
+                        天润牛奶酸奶
+                    </div>
+                </div>
+            </div>
+                <div class = "container">
+                    <div class="right">
+                        <div class = "container">
+                            <div class = "imgBx">
+                                <img src = "C:\Users\lyn\Desktop\a1\img\新建文件夹\酸奶.jpg" width = 250px>
+                            </div>
+                            <div class = "content">
+                                <img src = "C:\Users\lyn\Desktop\a1\img\新建文件夹\html二维码.jpg" width = 250px>
+                            </div>
+                        </div>
+                        <div class = "container">
+                            <br><br><br><br><br><br>
+                            北海牧场 宝石碗系列酸奶来了 99元12杯
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+    <h2 class="title" id="3">#3.水果</h2>
+    <div class = "main"> 
+        <div class = "container">
+            <div class="right">
+                    <div class = "container">
+                        <div class = "imgBx">
+                            <img src = "C:\Users\lyn\Desktop\a1\img\新建文件夹\荔枝.jpg" width = 250px>
+                        </div>
+                        <div class = "content">
+                            <img src = "C:\Users\lyn\Desktop\a1\img\新建文件夹\html二维码.jpg" width = 250px>
+                        </div>
+                    </div>
+                    <div class = "container">
+                        <br><br><br><br><br><br>
+                        荔枝 现摘现发 48小时送达
+                    </div>
+                </div>
+            </div>
+            <div class = "container">
+                <div class="right">
+                    <div class = "container">
+                        <div class = "imgBx">
+                            <img src = "C:\Users\lyn\Desktop\a1\img\新建文件夹\小番茄.jpg" width = 250px>
+                        </div>
+                        <div class = "content">
+                            <img src = "C:\Users\lyn\Desktop\a1\img\新建文件夹\html二维码.jpg" width = 250px>
+                        </div>
+                    </div>
+                    <div class = "container">
+                        <br><br><br><br><br><br>
+                        五彩小番茄 新鲜农场直发
+                    </div>
+                </div>
+            </div>
+    
+            <div class = "container">
+                <div class="right">
+                    <div class = "container">
+                        <div class = "imgBx">
+                            <img src = "C:\Users\lyn\Desktop\a1\img\新建文件夹\枇杷.jpg" width = 250px>
+                        </div>
+                        <div class = "content">
+                            <img src = "C:\Users\lyn\Desktop\a1\img\新建文件夹\html二维码.jpg" width = 250px>
+                        </div>
+                    </div>
+                    <div class = "container">
+                        <br><br><br><br><br><br>
+                        白玉枇杷 精心挑选30-35g大果 香味清甜 核小皮薄
+                    </div>
+                </div>
+            </div>
+    
+            <div class = "container">
+                <div class="right">
+                    <div class = "container">
+                        <div class = "imgBx">
+                            <img src = "C:\Users\lyn\Desktop\a1\img\新建文件夹\白瓜.jpg" width = 250px>
+                        </div>
+                        <div class = "content">
+                            <img src = "C:\Users\lyn\Desktop\a1\img\新建文件夹\html二维码.jpg" width = 250px>
+                        </div>
+                    </div>
+                    <div class = "container">
+                        <br><br><br><br><br><br>
+                        南汇东方蜜1号 10斤48块
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class = "main">
+            <div class = "container">
+                <div class="right">
+                    <div class = "container">
+                        <div class = "imgBx">
+                            <img src = "C:\Users\lyn\Desktop\a1\img\新建文件夹\樱桃.jpg" width = 250px>
+                        </div>
+                        <div class = "content">
+                            <img src = "C:\Users\lyn\Desktop\a1\img\新建文件夹\html二维码.jpg" width = 250px>
+                        </div>
+                    </div>
+                    <div class = "container">
+                        <br><br><br><br><br><br>
+                        樱桃99元开抢 含包装3斤 特级
+                    </div>
+                </div>
+            </div>
+            <div class = "container">
+                <div class="right">
+                    <div class = "container">
+                        <div class = "imgBx">
+                            <img src = "C:\Users\lyn\Desktop\a1\img\新建文件夹\杨梅.jpg" width = 250px>
+                        </div>
+                        <div class = "content">
+                            <img src = "C:\Users\lyn\Desktop\a1\img\新建文件夹\html二维码.jpg" width = 250px>
+                        </div>
+                    </div>
+                    <div class = "container">
+                        <br><br><br><br><br><br>
+                        杨梅书上现摘现发 1盒35枚左右 39.9元
+                    </div>
+                </div>
+            </div>
+            <div class = "container">
+                <div class="right">
+                    <div class = "container">
+                        <div class = "imgBx">
+                            <img src = "C:\Users\lyn\Desktop\a1\img\新建文件夹\泰国小菠萝.jpg" width = 250px>
+                        </div>
+                        <div class = "content">
+                            <img src = "C:\Users\lyn\Desktop\a1\img\新建文件夹\html二维码.jpg" width = 250px>
+                        </div>
+                    </div>
+                    <div class = "container">
+                        <br><br><br><br><br><br>
+                        泰国小菠萝一袋一斤开袋即食13.8元
+                    </div>
+                </div>
+            </div>
+            <div class = "container">
+                <div class="right">
+                    <div class = "container">
+                        <div class = "imgBx">
+                            <img src = "C:\Users\lyn\Desktop\a1\img\新建文件夹\西瓜.jpg" width = 250px>
+                        </div>
+                        <div class = "content">
+                            <img src = "C:\Users\lyn\Desktop\a1\img\新建文件夹\html二维码.jpg" width = 250px>
+                        </div>
+                    </div>
+                    <div class = "container">
+                        <br><br><br><br><br><br>
+                        无籽西瓜
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h2 class="title" id="4">#4.饮料冰激凌</h2>
+        <div class = "main"> 
+            <div class = "container">
+                <div class="right">
+                    <div class = "container">
+                        <div class = "imgBx">
+                            <img src = "C:\Users\lyn\Desktop\a1\img\新建文件夹\黑啤酒.jpg" width = 250px>
+                        </div>
+                        <div class = "content">
+                            <img src = "C:\Users\lyn\Desktop\a1\img\新建文件夹\html二维码.jpg" width = 250px>
+                        </div>
+                    </div>
+                    <div class = "container">
+                        <br><br><br><br><br><br>
+                        百威、科罗娜，喝走烦恼喝出精彩
+                    </div>
+                </div>
+            </div>
+            <div class = "container">
+                <div class="right">
+                    <div class = "container">
+                        <div class = "imgBx">
+                            <img src = "C:\Users\lyn\Desktop\a1\img\新建文件夹\七分甜.jpg" width = 250px>
+                        </div>
+                        <div class = "content">
+                            <img src = "C:\Users\lyn\Desktop\a1\img\新建文件夹\html二维码.jpg" width = 250px>
+                        </div>
+                    </div>
+                    <div class = "container">
+                        <br><br><br><br><br><br>
+                        七分甜杨枝甘露
+                    </div>
+                </div>
+            </div>
+    
+            <div class = "container">
+                <div class="right">
+                    <div class = "container">
+                        <div class = "imgBx">
+                            <img src = "C:\Users\lyn\Desktop\a1\img\新建文件夹\喜茶.jpg" width = 250px>
+                        </div>
+                        <div class = "content">
+                            <img src = "C:\Users\lyn\Desktop\a1\img\新建文件夹\html二维码.jpg" width = 250px>
+                        </div>
+                    </div>
+                    <div class = "container">
+                        <br><br><br><br><br><br>
+                        喜茶套餐
+                    </div>
+                </div>
+            </div>
+    
+            
+            <div class = "container">
+                <div class="right">
+                    <div class = "container">
+                        <div class = "imgBx">
+                            <img src = "C:\Users\lyn\Desktop\a1\img\新建文件夹\乐乐茶.jpg" width = 250px>
+                        </div>
+                        <div class = "content">
+                            <img src = "C:\Users\lyn\Desktop\a1\img\新建文件夹\html二维码.jpg" width = 250px>
+                        </div>
+                    </div>
+                    <div class = "container">
+                        <br><br><br><br><br><br>
+                        乐乐茶
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class = "main">
+            <div class = "container">
+                <div class="right">
+                    <div class = "container">
+                        <div class = "imgBx">
+                            <img src = "C:\Users\lyn\Desktop\a1\img\新建文件夹\咖啡.jpg" width = 250px>
+                        </div>
+                        <div class = "content">
+                            <img src = "C:\Users\lyn\Desktop\a1\img\新建文件夹\html二维码.jpg" width = 250px>
+                        </div>
+                    </div>
+                    <div class = "container">
+                        <br><br><br><br><br><br>
+                        咖啡豆，48小时到货
+                    </div>
+                </div>
+            </div>
+            <div class = "container">
+                <div class="right">
+                    <div class = "container">
+                        <div class = "imgBx">
+                            <img src = "C:\Users\lyn\Desktop\a1\img\新建文件夹\挂耳咖啡.jpg" width = 250px>
+                        </div>
+                        <div class = "content">
+                            <img src = "C:\Users\lyn\Desktop\a1\img\新建文件夹\html二维码.jpg" width = 250px>
+                        </div>
+                    </div>
+                    <div class = "container">
+                        <br><br><br><br><br><br>
+                        挂耳咖啡 咖啡豆，48小时到货
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h2 class="title" id="5">#5.休闲食品</h2>
+        <div class = "main"> 
+            <div class = "container">
+                <div class="right">
+                    <div class = "container">
+                        <div class = "imgBx">
+                            <img src = "C:\Users\lyn\Desktop\a1\img\新建文件夹\饼干什么酥.jpg" width = 250px>
+                        </div>
+                        <div class = "content">
+                            <img src = "C:\Users\lyn\Desktop\a1\img\新建文件夹\html二维码.jpg" width = 250px>
+                        </div>
+                    </div>
+                    <div class = "container">
+                        <br><br><br><br><br><br>
+                        美心鸡蛋卷208g，美心香脆果仁酥178g
+                    </div>
+                </div>
+            </div>
+            <div class = "container">
+                <div class="right">
+                    <div class = "container">
+                        <div class = "imgBx">
+                            <img src = "C:\Users\lyn\Desktop\a1\img\新建文件夹\榴莲千层.jpg" width = 250px>
+                        </div>
+                        <div class = "content">
+                            <img src = "C:\Users\lyn\Desktop\a1\img\新建文件夹\html二维码.jpg" width = 250px>
+                        </div>
+                    </div>
+                    <div class = "container">
+                        <br><br><br><br><br><br>
+                        榴莲千层 小区50份成团 39.9
+                    </div>
+                </div>
+            </div>
+    
+            <div class = "container">
+                <div class="right">
+                    <div class = "container">
+                        <div class = "imgBx">
+                            <img src = "C:\Users\lyn\Desktop\a1\img\新建文件夹\火锅.jpg" width = 250px>
+                        </div>
+                        <div class = "content">
+                            <img src = "C:\Users\lyn\Desktop\a1\img\新建文件夹\html二维码.jpg" width = 250px>
+                        </div>
+                    </div>
+                    <div class = "container">
+                        <br><br><br><br><br><br>
+                        牛new套餐火锅、大福
+                    </div>
+                </div>
+            </div>
+    
+            <div class = "container">
+                <div class="right">
+                    <div class = "container">
+                        <div class = "imgBx">
+                            <img src = "C:\Users\lyn\Desktop\a1\img\新建文件夹\大列巴.jpg" width = 250px>
+                        </div>
+                        <div class = "content">
+                            <img src = "C:\Users\lyn\Desktop\a1\img\新建文件夹\html二维码.jpg" width = 250px>
+                        </div>
+                    </div>
+                    <div class = "container">
+                        <br><br><br><br><br><br>
+                        俄罗斯大列巴 全麦坚果蔓越莓
+                    </div>
+                </div>
+            </div>
+           
+        </div>
+        <div class = "main">
+            <div class = "container">
+                <div class="right">
+                    <div class = "container">
+                        <div class = "imgBx">
+                            <img src = "C:\Users\lyn\Desktop\a1\img\新建文件夹\瓜子.jpg" width = 250px>
+                        </div>
+                        <div class = "content">
+                            <img src = "C:\Users\lyn\Desktop\a1\img\新建文件夹\html二维码.jpg" width = 250px>
+                        </div>
+                    </div>
+                    <div class = "container">
+                        <br><br><br><br><br><br>
+                        老街口山核桃味瓜子500g*2
+                    </div>
+                </div>
+            </div>
+            <div class = "container">
+                <div class="right">
+                    <div class = "container">
+                        <div class = "imgBx">
+                            <img src = "C:\Users\lyn\Desktop\a1\img\新建文件夹\瑞士卷.jpg" width = 250px>
+                        </div>
+                        <div class = "content">
+                            <img src = "C:\Users\lyn\Desktop\a1\img\新建文件夹\html二维码.jpg" width = 250px>
+                        </div>
+                    </div>
+                    <div class = "container">
+                        <br><br><br><br><br><br>
+                        瑞士卷蛋糕 精致早餐必备 原味巧克力味720g/盒 59.9元
+                    </div>
+                </div>
+            </div>
+        </div>    
+        <h2 class="title" id="6">#6.米面粮油</h2>
+        <div class = "main"> 
+            <div class = "container">
+                <div class="right">
+                    <div class = "container">
+                        <div class = "imgBx">
+                            <img src = "C:\Users\lyn\Desktop\a1\img\新建文件夹\饺子.jpg" width = 250px>
+                        </div>
+                        <div class = "content">
+                            <img src = "C:\Users\lyn\Desktop\a1\img\新建文件夹\html二维码.jpg" width = 250px>
+                        </div>
+                    </div>
+                    <div class = "container">
+                        <br><br><br><br><br><br>
+                        饺子第二批团购
+                    </div>
+                </div>
+            </div>
+            <div class = "container">
+                <div class="right">
+                    <div class = "container">
+                        <div class = "imgBx">
+                            <img src = "C:\Users\lyn\Desktop\a1\img\新建文件夹\包子.jpg" width = 250px>
+                        </div>
+                        <div class = "content">
+                            <img src = "C:\Users\lyn\Desktop\a1\img\新建文件夹\html二维码.jpg" width = 250px>
+                        </div>
+                    </div>
+                    <div class = "container">
+                        <br><br><br><br><br><br>
+                        肉包菜包豆沙包
+                    </div>
+                </div>
+            </div>
+            <div class = "container">
+                <div class="right">
+                    <div class = "container">
+                        <div class = "imgBx">
+                            <img src = "C:\Users\lyn\Desktop\a1\img\新建文件夹\年糕.jpg" width = 250px>
+                        </div>
+                        <div class = "content">
+                            <img src = "C:\Users\lyn\Desktop\a1\img\新建文件夹\html二维码.jpg" width = 250px>
+                        </div>
+                    </div>
+                    <div class = "container">
+                        <br><br><br><br><br><br>
+                        宁波手打年糕
+                    </div>
+                </div>
+            </div>
+    
+            <div class = "container">
+                <div class="right">
+                    <div class = "container">
+                        <div class = "imgBx">
+                            <img src = "C:\Users\lyn\Desktop\a1\img\新建文件夹\意面.jpg" width = 250px>
+                        </div>
+                        <div class = "content">
+                            <img src = "C:\Users\lyn\Desktop\a1\img\新建文件夹\html二维码.jpg" width = 250px>
+                        </div>
+                    </div>
+                    <div class = "container">
+                        <br><br><br><br><br><br>
+                        空刻意面 99元5盒 4种口味
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class = "main">
+            <div class = "container">
+                <div class="right">
+                    <div class = "container">
+                        <div class = "imgBx">
+                            <img src = "C:\Users\lyn\Desktop\a1\img\新建文件夹\花生油.jpg" width = 250px>
+                        </div>
+                        <div class = "content">
+                            <img src = "C:\Users\lyn\Desktop\a1\img\新建文件夹\html二维码.jpg" width = 250px>
+                        </div>
+                    </div>
+                    <div class = "container">
+                        <br><br><br><br><br><br>
+                        胡姬花古法花生油 高端花生油 国民大品牌
+                    </div>
+                </div>
+            </div>
+            <div class = "container">
+                <div class="right">
+                    <div class = "container">
+                        <div class = "imgBx">
+                            <img src = "C:\Users\lyn\Desktop\a1\img\新建文件夹\橄榄油.jpg" width = 250px>
+                        </div>
+                        <div class = "content">
+                            <img src = "C:\Users\lyn\Desktop\a1\img\新建文件夹\html二维码.jpg" width = 250px>
+                        </div>
+                    </div>
+                    <div class = "container">
+                        <br><br><br><br><br><br>
+                        欧洲顶级橄榄油 西班牙橄榄油
+                    </div>
+                </div>
+            </div>
+            <div class = "container">
+                <div class="right">
+                    <div class = "container">
+                        <div class = "imgBx">
+                            <img src = "C:\Users\lyn\Desktop\a1\img\新建文件夹\调味品.jpg" width = 250px>
+                        </div>
+                        <div class = "content">
+                            <img src = "C:\Users\lyn\Desktop\a1\img\新建文件夹\html二维码.jpg" width = 250px>
+                        </div>
+                    </div>
+                    <div class = "container">
+                        <br><br><br><br><br><br>
+                        京东自营发货 酱油陈醋蚝油
+                    </div>
+                </div>
+            </div>
+            <div class = "container">
+                <div class="right">
+                    <div class = "container">
+                        <div class = "imgBx">
+                            <img src = "C:\Users\lyn\Desktop\a1\img\新建文件夹\大米.jpg" width = 250px>
+                        </div>
+                        <div class = "content">
+                            <img src = "C:\Users\lyn\Desktop\a1\img\新建文件夹\html二维码.jpg" width = 250px>
+                        </div>
+                    </div>
+                    <div class = "container">
+                        <br><br><br><br><br><br>
+                        10kg正宗五常稻花香大米 嘎嘎香
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h2 class="title" id="7">#7.日用品</h2>
+        <div class = "main"> 
+            <div class = "container">
+                <div class="right">
+                    <div class = "container">
+                        <div class = "imgBx">
+                            <img src = "C:\Users\lyn\Desktop\a1\img\新建文件夹\卫生纸.jpg" width = 250px>
+                        </div>
+                        <div class = "content">
+                            <img src = "C:\Users\lyn\Desktop\a1\img\新建文件夹\html二维码.jpg" width = 250px>
+                        </div>
+                    </div>
+                    <div class = "container">
+                        <br><br><br><br><br><br>
+                        清风卷纸
+                    </div>
+                </div>
+            </div>
+            <div class = "container">
+                <div class="right">
+                    <div class = "container">
+                        <div class = "imgBx">
+                            <img src = "C:\Users\lyn\Desktop\a1\img\新建文件夹\酒精.jpg" width = 250px>
+                        </div>
+                        <div class = "content">
+                            <img src = "C:\Users\lyn\Desktop\a1\img\新建文件夹\html二维码.jpg" width = 250px>
+                        </div>
+                    </div>
+                    <div class = "container">
+                        <br><br><br><br><br><br>
+                        75%酒精 酒精湿巾 pvc手套 84泡腾消毒片
+                    </div>
+                </div>
+            </div>
+            <div class = "container">
+                <div class="right">
+                    <div class = "container">
+                        <div class = "imgBx">
+                            <img src = "C:\Users\lyn\Desktop\a1\img\新建文件夹\卫生巾.jpg" width = 250px>
+                        </div>
+                        <div class = "content">
+                            <img src = "C:\Users\lyn\Desktop\a1\img\新建文件夹\html二维码.jpg" width = 250px>
+                        </div>
+                    </div>
+                    <div class = "container">
+                        <br><br><br><br><br><br>
+                        日本花王
+                    </div>
+                </div>
+            </div>
+    
+            <div class = "container">
+                <div class="right">
+                    <div class = "container">
+                        <div class = "imgBx">
+                            <img src = "C:\Users\lyn\Desktop\a1\img\新建文件夹\纸尿裤.jpg" width = 250px>
+                        </div>
+                        <div class = "content">
+                            <img src = "C:\Users\lyn\Desktop\a1\img\新建文件夹\html二维码.jpg" width = 250px>
+                        </div>
+                    </div>
+                    <div class = "container">
+                        <br><br><br><br><br><br>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+		    <h2 class="title" id="8">#8.其他</h2>
+            <div class = "main"> 
+                <div class = "container">
+                    <div class="right">
+                        <div class = "container">
+                            <div class = "imgBx">
+                                <img src = "C:\Users\lyn\Desktop\a1\img\新建文件夹\酒酿.jpg" width = 250px>
+                            </div>
+                            <div class = "content">
+                                <img src = "C:\Users\lyn\Desktop\a1\img\新建文件夹\html二维码.jpg" width = 250px>
+                            </div>
+                        </div>
+                        <div class = "container">
+                            <br><br><br><br><br><br>
+                            甜酒酿 25元到手4盒
+                        </div>
+                    </div>
+                </div>
+                <div class = "container">
+                    <div class="right">
+                        <div class = "container">
+                            <div class = "imgBx">
+                                <img src = "C:\Users\lyn\Desktop\a1\img\新建文件夹\肯德基.jpg" width = 250px>
+                            </div>
+                            <div class = "content">
+                                <img src = "C:\Users\lyn\Desktop\a1\img\新建文件夹\html二维码.jpg" width = 250px>
+                            </div>
+                        </div>
+                        <div class = "container">
+                            <br><br><br><br><br><br>
+                            蔬菜：春笋
+                        </div>
+                    </div>
+            </div>
+		<script>
+			let titles = document.getElementsByClassName("title");
+			let nav = document.querySelectorAll("#nav a");
+			let s = document.documentElement;
+			document.body.onscroll = () => {
+    		for (let i = titles.length - 1; i >= 0; i--) {
+    		if (titles[i].offsetTop <= s.scrollTop) {
+        		for (let n of nav) {
+        		let href = n.href.split("#")[1];
+        		if (href == titles[i].id) {
+            		n.className = "active";
+        		} else {
+            		n.className = "";
+        		}
+        		}
+        		break;
+    }
+    }
+};
+		</script>
+	</body>
